@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo - The Sporting Legend</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-image: url("cr7-celebrating.jpg"); /* Replace with Ronaldo celebrating image URL */
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            padding: 100px;
+            text-align: center;
+            color: #000;  /* Changed to black text for better contrast */
+        }
+
+        h1 {
+            font-size: 6rem;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: lighter;
+            color: #333;  /* Changed to a darker grey for better contrast */
+        }
+
+        main {
+            padding: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .section {
+            width: 45%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .skill {
+            width: 45%;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .skill i {
+            font-size: 2rem;
+            color: #ffcc00;
+        }
+
+        .golden {
+            background-color: #ffd700;
+        }
+
+        .champions {
+            background-color: #0000cc;
+            color: white;
+        }
+
+        .international {
+            background-color: #ff0000;
+            color: white;
+        }
+    </style>
+    <script>
+        // Animations on scroll
+        const sections = document.querySelectorAll(".section");
+
+        window.addEventListener("scroll", () => {
+            sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const viewportHeight = window.innerHeight;
+
+                if (sectionTop <= viewportHeight / 1.2) {
+                    section.classList.add("active");
+                } else {
+                    section.classList.remove("active");
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cristiano Ronaldo</h1>
+        <p class="subtitle">
+            The Icon. The Legend. The Goal Machine.
+        </p>
+    </header>
+    <main>
+        <section class="golden">
+            <h2>A Glorious History</h2>
+            <p>Cristiano Ronaldo dos Santos Aveiro, born in 1985, is a Portuguese professional footballer who has taken the world by storm. Widely regarded as one of the greatest players of all time, Ronaldo's journey from a young player in Portugal to a global icon is an inspiration.</p>
+        </section>
+        <section class="champions">
+            <h2>Unmatched Accomplishments</h2>
+            <p>Ronaldo's trophy cabinet is overflowing with accolades. He boasts five Ballon d'Or awards (the most ever), four European Golden Shoes, and a staggering number of league titles and Champions League victories. His goalscoring records for club and country are unmatched, solidifying his place as a legend.</p>
+        </section>
+        <section class="international">
+            <h2>A Masterful Skillset</h2>
+            <div class="
